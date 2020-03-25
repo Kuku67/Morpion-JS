@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Morpion</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Jeu du Morpion</h1>
+        <div id="container">
+            <div id="joueur1">
+                <h2>Joueur 1</h2>
+                <p>Symbole : X</p>
+                <p class="compteur"></p>
+                <p class="victory">Victoire !</p>
+                <p class="selected">À vous de jouer !</p>
+            </div>
+            <div id="jeu">
+                <div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                </div>
+                <div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                </div>
+                <div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                </div>
+            </div>
+            <div id="joueur2">
+                <h2>Joueur 2</h2>
+                <p>Symbole : O</p>
+                <p class="compteur"></p>
+                <p class="victory">Victoire !</p>
+                <p class="selected">À vous de jouer !</p>
+            </div>
+        </div>
+        <div id="statut">
+            <p id="phrase"></p>
+        </div>    
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="new_app.js"></script>
+</body>
+</html>
