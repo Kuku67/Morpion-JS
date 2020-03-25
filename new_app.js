@@ -62,6 +62,7 @@ function app(gameStatus, player, squares, turn, finished, lienRejouer) {
                 gameStatus = "Au tour de : <strong>Joueur " + player[turn].name + "</strong>";
                 sendMessage(gameStatus);
             } else {
+                // A cause d'un bug étrange, j'ai du ajouter cette condition pour débuguer
                 if(!noOneWins(squares)) {
                 // Si la case est déjà prise, on prévient le joueur qu'il doit ressayer.
                 gameStatus = "Case déjà prise ! Veuillez choisir une autre case.";
