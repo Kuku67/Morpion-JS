@@ -55,7 +55,7 @@ function app(gameStatus, player, squares, turn, finished, lienRejouer) {
                 }
                 // S'il ne s'est rien passé de spécial, on continue donc et le tour appartient à l'autre joueur.
                 turn++;
-                // Cela permet aussi de nous placer toujours au bon endroit dans le tableau "players".
+                // Afin d'être toujours sur le bon index de mon objet
                 turn = turn % 2;
                 playerStatment();
                 // On affiche le message pour indiquer au joueur que c'est à lui de jouer.
